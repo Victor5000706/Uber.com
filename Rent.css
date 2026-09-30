@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+
+    padding: 0 4.2%;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Uber logo */
+
+.logo {
+    color: #000;
+    text-decoration: none;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    margin-right: 38px;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-item {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 0 14px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    position: relative;
+}
+
+.nav-item span {
+    font-size: 9px;
+}
+
+
+/* Active Ride tab */
+
+.nav-item.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+
+    height: 2px;
+    background: #000;
+}
+
+
+/* Right navbar */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.login {
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.signup {
+    color: #fff;
+    background: #000;
+
+    text-decoration: none;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-container {
+    display: flex;
+
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+
+/* =========================
+   LEFT PANEL
+========================= */
+
+.ride-panel {
+    width: 26%;
+    min-width: 250px;
+
+    padding: 22px 20px;
+
+    background: #fff;
+}
+
+
+/* Title */
+
+.ride-panel h2 {
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+/* Input */
+
+.input-box {
+    width: 100%;
+    height: 36px;
+
+    background: #f5f5f5;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+
+    margin-bottom: 7px;
+}
+
+.input-box .icon {
+    font-size: 8px;
+    margin-right: 9px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    width: 100%;
+
+    font-size: 10px;
+}
+
+.input-box input::placeholder {
+    color: #777;
+}
+
+
+/* Pickup now */
+
+.select-box {
+    height: 35px;
+    width: 100%;
+
+    background: #f5f5f5;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+
+    margin-top: 2px;
+
+    font-size: 10px;
+
+    gap: 8px;
+}
+
+.select-box .arrow {
+    margin-left: auto;
+}
+
+
+/* For me */
+
+.for-me {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 6px;
+
+    background: #f5f5f5;
+
+    border-radius: 20px;
+
+    padding: 6px 10px;
+
+    margin-top: 7px;
+
+    font-size: 9px;
+}
+
+
+/* Search */
+
+.search-button {
+    width: 100%;
+
+    height: 36px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #000;
+    color: #fff;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.search-button:hover {
+    background: #333;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-container {
+    flex: 1;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    display: block;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .nav-item {
+        padding: 0 7px;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .ride-panel {
+        width: 35%;
+        min-width: 210px;
+    }
+}
+
+
+
+
+

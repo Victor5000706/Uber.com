@@ -1,0 +1,1328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+  height: 32px;
+  background: #050505;
+  border-bottom: 1px solid #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 18%;
+  font-size: 8px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.uber-logo {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-right button {
+  border: none;
+  background: #fff;
+  color: #000;
+
+  border-radius: 20px;
+  padding: 5px 10px;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice {
+  height: 44px;
+  background: #fff4df;
+  color: #111;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  font-size: 9px;
+}
+
+.notice strong {
+  font-weight: 500;
+}
+
+.notice p {
+  margin-top: 3px;
+  color: #555;
+  font-size: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 20%;
+  top: 7px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  height: 460px;
+  display: flex;
+  gap: 9px;
+
+  padding: 28px 0 25px;
+  overflow: hidden;
+}
+
+.side-image,
+.hero-main {
+  height: 405px;
+  border-radius: 8px;
+}
+
+.side-image {
+  flex: 0 0 16%;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-image {
+  background-image: url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80");
+  margin-left: -2%;
+}
+
+.right-image {
+  background-image: url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80");
+  margin-right: -2%;
+}
+
+.hero-main {
+  flex: 1;
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,.08),
+      rgba(0,0,0,.08)
+    ),
+    url("https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1400&q=85");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: absolute;
+
+  top: 145px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 25px;
+  line-height: 1.05;
+  font-weight: 700;
+
+  text-shadow: 0 2px 5px rgba(0,0,0,.4);
+}
+
+.hero-content p {
+  margin-top: 12px;
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   APP SELECTOR
+========================= */
+
+.app-selector {
+  position: absolute;
+
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 220px;
+  height: 100px;
+
+  background: #fff;
+  color: #111;
+
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,.4);
+}
+
+.app-item {
+  width: 55px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 10px;
+}
+
+.app-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f3f3;
+  font-size: 22px;
+}
+
+.hotels-item {
+  position: relative;
+}
+
+.new {
+  position: absolute;
+
+  right: -1px;
+  top: -7px;
+
+  background: #ff3b4a;
+  color: #fff;
+
+  padding: 3px 5px;
+  border-radius: 3px;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   UBER ONE
+========================= */
+
+.uber-one {
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+
+  text-align: center;
+
+  padding: 38px 20px 35px;
+}
+
+.uber-one h2 {
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.uber-one p {
+  margin-top: 13px;
+
+  color: #aaa;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.uber-one a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* =========================
+   QR SECTION
+========================= */
+
+.qr-section {
+  height: 145px;
+
+  border-bottom: 1px solid #252525;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.qr-code {
+  width: 60px;
+  height: 60px;
+
+  background: #fff;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-pattern {
+  color: #000;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.qr-section p {
+  font-size: 8px;
+  color: #aaa;
+}
+
+
+/* =========================
+   FEATURE SECTIONS
+========================= */
+
+.feature {
+  min-height: 235px;
+
+  border-bottom: 1px solid #252525;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 100px;
+
+  padding: 35px 15%;
+}
+
+.feature-text {
+  width: 320px;
+}
+
+.feature-text h2 {
+  font-size: 17px;
+  line-height: 1.25;
+
+  margin-bottom: 12px;
+}
+
+.feature-text p {
+  font-size: 8px;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.feature-image {
+  position: relative;
+
+  width: 155px;
+  height: 155px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 9px;
+  border: 5px solid #fff;
+}
+
+
+/* =========================
+   FEATURE ICONS
+========================= */
+
+.feature-icon {
+  position: absolute;
+
+  width: 58px;
+  height: 58px;
+
+  bottom: -20px;
+  left: -20px;
+
+  border-radius: 9px;
+
+  background: #fff;
+  color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.uber-icon {
+  background: #f9d15b;
+  font-size: 28px;
+}
+
+.bed-icon {
+  font-size: 24px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.try-button {
+  margin-top: 14px;
+
+  background: #fff;
+  color: #000;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 8px 12px;
+
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.try-button:hover {
+  background: #ddd;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .nav-left {
+    gap: 8px;
+  }
+
+  .nav-right {
+    gap: 8px;
+  }
+
+  .notice {
+    padding: 0 30px;
+  }
+
+  .close {
+    right: 15px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .hero-main {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .hero-content {
+    top: 110px;
+  }
+
+  .feature {
+    padding: 45px 25px;
+    gap: 30px;
+  }
+
+  .feature-text {
+    width: 45%;
+  }
+
+  .feature-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .nav-left a {
+    display: none;
+  }
+
+  .nav-right span,
+  .nav-right a:first-of-type {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 23px;
+  }
+
+  .hero-content p {
+    font-size: 9px;
+  }
+
+  .feature {
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .feature-text h2 {
+    font-size: 14px;
+  }
+
+  .feature-text p {
+    font-size: 7px;
+  }
+
+  .feature-image {
+    width: 125px;
+    height: 125px;
+  }
+
+  .feature.reverse {
+    flex-direction: row;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ==================================
+   STEPS SECTION
+================================== */
+
+.steps-section {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 55px 30px 65px;
+}
+
+.steps-section > h1 {
+    font-size: 23px;
+    margin-bottom: 38px;
+    font-weight: 600;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+}
+
+.step {
+    min-width: 0;
+}
+
+.step > h2 {
+    color: #777;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+
+/* ==================================
+   PHONE
+================================== */
+
+.phone {
+    width: 165px;
+    height: 315px;
+
+    margin: auto;
+
+    padding: 7px;
+
+    border: 2px solid #555;
+    border-radius: 28px;
+
+    background: #090909;
+
+    box-shadow:
+        0 0 0 2px #111,
+        inset 0 0 5px #555;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 21px;
+
+    background: #fff;
+    color: #111;
+
+    position: relative;
+}
+
+
+/* STATUS BAR */
+
+.status-bar {
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.island {
+    position: absolute;
+
+    width: 48px;
+    height: 13px;
+
+    background: #000;
+
+    border-radius: 10px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ==================================
+   PHONE 1
+================================== */
+
+.app-header {
+    display: flex;
+    gap: 12px;
+
+    padding: 8px;
+
+    font-size: 8px;
+}
+
+.search {
+    margin: 5px 8px;
+
+    height: 27px;
+
+    border-radius: 14px;
+
+    background: #f2f2f2;
+
+    padding: 8px;
+
+    font-size: 7px;
+
+    color: #777;
+}
+
+.phone-screen h4 {
+    font-size: 10px;
+    margin: 12px 9px 7px;
+}
+
+.mini-icons {
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.mini-icons div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.mini-icons small {
+    font-size: 6px;
+}
+
+.food-image {
+    height: 120px;
+
+    margin: 12px 8px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.1)
+        ),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ==================================
+   PHONE 2 - MAP
+================================== */
+
+.map-screen {
+    background: #dceee8;
+}
+
+.map {
+    height: calc(100% - 26px);
+    position: relative;
+
+    background:
+        linear-gradient(
+            35deg,
+            transparent 42%,
+            rgba(255,255,255,.9) 43%,
+            rgba(255,255,255,.9) 48%,
+            transparent 49%
+        ),
+        linear-gradient(
+            120deg,
+            transparent 50%,
+            rgba(255,255,255,.8) 51%,
+            rgba(255,255,255,.8) 54%,
+            transparent 55%
+        ),
+        #cce5dc;
+}
+
+.pin {
+    position: absolute;
+
+    background: white;
+
+    padding: 3px 6px;
+
+    border-radius: 10px;
+
+    font-size: 7px;
+
+    box-shadow: 0 1px 4px #999;
+}
+
+.p1 {
+    top: 45px;
+    left: 20px;
+}
+
+.p2 {
+    top: 70px;
+    right: 18px;
+}
+
+.p3 {
+    top: 105px;
+    left: 45px;
+}
+
+.p4 {
+    top: 130px;
+    right: 30px;
+}
+
+.p5 {
+    top: 165px;
+    left: 25px;
+}
+
+.p6 {
+    top: 190px;
+    right: 45px;
+}
+
+.hotel-card {
+    position: absolute;
+
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+
+    background: #fff;
+
+    padding: 8px;
+
+    border-radius: 7px;
+
+    font-size: 8px;
+}
+
+.hotel-photo {
+    height: 65px;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+    background:
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ==================================
+   PHONE 3
+================================== */
+
+.reservation {
+    padding: 8px;
+}
+
+.back {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.reservation h3 {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.reservation-image {
+    width: 100%;
+    height: 78px;
+
+    border-radius: 3px;
+
+    background:
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=500&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.reservation h4 {
+    margin: 8px 0 2px;
+
+    font-size: 9px;
+}
+
+.reservation p {
+    font-size: 6px;
+    color: #777;
+}
+
+.reservation-info {
+    margin-top: 9px;
+
+    font-size: 7px;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 5px;
+}
+
+
+/* ==================================
+   STEP TEXT
+================================== */
+
+.step-text {
+    margin-top: 12px;
+}
+
+.step-text h3 {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.step-text p {
+    color: #bbb;
+    font-size: 9px;
+    line-height: 1.45;
+}
+
+
+/* ==================================
+   FAQ
+================================== */
+
+.faq-section {
+    border-top: 1px solid #242424;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding: 40px 30px 60px;
+}
+
+.faq-section h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.faq-tabs {
+    display: flex;
+    gap: 28px;
+
+    border-bottom: 2px solid #333;
+
+    overflow-x: auto;
+}
+
+.faq-tabs span {
+    white-space: nowrap;
+
+    padding-bottom: 10px;
+
+    font-size: 8px;
+
+    color: #aaa;
+}
+
+.faq-tabs .active {
+    color: white;
+
+    border-bottom: 3px solid white;
+}
+
+.questions {
+    width: 100%;
+}
+
+.question {
+    height: 39px;
+
+    border-bottom: 1px solid #252525;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 12px;
+
+    font-size: 9px;
+}
+
+.question b {
+    font-size: 13px;
+}
+
+
+/* ==================================
+   QR SECTION
+================================== */
+
+.qr-section {
+    height: 165px;
+
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.qr-code {
+    width: 67px;
+    height: 67px;
+
+    background: white;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-grid {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    gap: 2px;
+
+    background: #fff;
+}
+
+.qr-grid span {
+    background: #000;
+}
+
+.qr-grid span:nth-child(2),
+.qr-grid span:nth-child(6),
+.qr-grid span:nth-child(12),
+.qr-grid span:nth-child(18),
+.qr-grid span:nth-child(22) {
+    background: white;
+}
+
+.qr-section p {
+    color: #aaa;
+    font-size: 8px;
+}
+
+
+/* ==================================
+   TERMS
+================================== */
+
+.terms-section {
+    border-bottom: 1px solid #242424;
+
+    padding: 40px 30px;
+}
+
+.terms {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: auto;
+}
+
+.terms p {
+    color: #999;
+
+    font-size: 8px;
+
+    line-height: 1.55;
+
+    margin-bottom: 13px;
+}
+
+
+/* ==================================
+   FOOTER
+================================== */
+
+footer {
+    background: #000;
+
+    padding: 50px 30px;
+}
+
+.footer-container {
+    max-width: 1180px;
+
+    margin: auto;
+}
+
+.footer-container > h2 {
+    font-size: 16px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.help-link {
+    display: inline-block;
+
+    font-size: 9px;
+
+    margin-bottom: 55px;
+}
+
+.footer-columns {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 60px;
+}
+
+.footer-columns h3 {
+    font-size: 10px;
+
+    margin-bottom: 13px;
+}
+
+.footer-columns a {
+    display: block;
+
+    color: #999;
+
+    font-size: 8px;
+
+    margin-bottom: 11px;
+}
+
+
+/* ==================================
+   FOOTER MIDDLE
+================================== */
+
+.footer-middle {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+.socials {
+    display: flex;
+
+    gap: 20px;
+
+    color: #aaa;
+
+    font-size: 11px;
+}
+
+.location {
+    display: flex;
+
+    gap: 20px;
+
+    color: #aaa;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   APP SECTION
+========================= */
+
+.apps-section {
+    background: #f6f6f6;
+    padding: 52px 0;
+}
+
+.apps-container {
+    width: 920px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.apps-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+      /* ==================================
+   APP BUTTONS
+================================== */
+
+.app-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 35px;
+}
+
+.app-store,
+.google-play {
+    width: 105px;
+    height: 33px;
+
+    border: 1px solid #555;
+
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.app-store small,
+.google-play small {
+    font-size: 5px;
+}
+
+.app-store strong,
+.google-play strong {
+    font-size: 9px;
+}
+
+
+/* ==================================
+   FOOTER BOTTOM
+================================== */
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 38px;
+
+    color: #777;
+
+    font-size: 8px;
+}
+
+.footer-bottom div {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-bottom a {
+    color: #777;
+}
+
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 800px) {
+
+    .steps-container {
+        gap: 20px;
+    }
+
+    .phone {
+        width: 135px;
+        height: 260px;
+    }
+
+    .step-text h3 {
+        font-size: 10px;
+    }
+
+    .step-text p {
+        font-size: 8px;
+    }
+
+    .footer-columns {
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .steps-section {
+        padding: 40px 20px;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .step {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .step > h2 {
+        text-align: center;
+    }
+
+    .phone {
+        width: 165px;
+        height: 315px;
+    }
+
+    .faq-section {
+        padding: 35px 20px;
+    }
+
+    .faq-tabs {
+        gap: 18px;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

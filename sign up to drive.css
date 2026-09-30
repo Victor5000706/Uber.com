@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 25px;
+    background: #000;
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+.nav {
+    width: 475px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-right span {
+    font-size: 5px;
+}
+
+.nav-right button {
+    border: 0;
+    background: #fff;
+    color: #000;
+
+    border-radius: 10px;
+
+    padding: 4px 8px;
+
+    font-size: 5px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 205px;
+    background: #000;
+    color: #fff;
+}
+
+.hero-content {
+    width: 475px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 230px;
+}
+
+.hero-text h1 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 7px;
+    color: #eee;
+}
+
+.hero-image {
+    width: 225px;
+    height: 134px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+    background: #fff;
+    padding: 28px 0 50px;
+}
+
+.action-container {
+    width: 475px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.action {
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #aaa;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.action strong {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.information {
+    padding-bottom: 32px;
+}
+
+.info-container {
+    width: 475px;
+    margin: auto;
+}
+
+.info-container h2 {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-item {
+    min-width: 0;
+}
+
+.icon {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.info-item h3 {
+    font-size: 8px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.info-item p {
+    font-size: 6px;
+    line-height: 9px;
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #000;
+    color: #fff;
+    min-height: 365px;
+}
+
+.footer-container {
+    width: 475px;
+    margin: auto;
+    padding-top: 43px;
+}
+
+
+/* Footer top */
+
+.footer-top h3 {
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.footer-top a {
+    font-size: 7px;
+}
+
+
+/* Footer columns */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h4 {
+    font-size: 7px;
+    margin-bottom: 2px;
+}
+
+.footer-column a {
+    font-size: 5px;
+    color: #ddd;
+}
+
+
+/* Social and location */
+
+.footer-middle {
+    margin-top: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 14px;
+}
+
+.social span {
+    font-size: 7px;
+}
+
+.location {
+    font-size: 6px;
+}
+
+
+/* Apps */
+
+.apps {
+    display: flex;
+    gap: 7px;
+    margin-top: 27px;
+}
+
+.app {
+    border: 1px solid #555;
+    border-radius: 3px;
+
+    padding: 6px 9px;
+
+    font-size: 5px;
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 27px;
+
+    color: #888;
+    font-size: 5px;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .nav,
+    .hero-content,
+    .action-container,
+    .info-container,
+    .footer-container {
+        width: 90%;
+    }
+
+
+    .hero {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .action-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
+    }
+
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,1025 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 38px;
+
+    background: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 17.5%;
+
+    font-size: 8px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.arrow {
+    margin-left: 3px;
+    font-size: 10px;
+}
+
+.nav-right button {
+    border: none;
+
+    background: #fff;
+    color: #000;
+
+    border-radius: 20px;
+
+    padding: 6px 11px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   COMMITMENT SECTION
+========================= */
+
+.commitment {
+    width: 63%;
+    max-width: 750px;
+
+    margin: 38px auto 105px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.commitment-text h1 {
+    font-size: 29px;
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+}
+
+.commitment-text p {
+    width: 285px;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+.commitment-image {
+    width: 100%;
+}
+
+.commitment-image img {
+    width: 100%;
+    height: 225px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   PUBLIC SAFETY
+========================= */
+
+.public-safety {
+    width: 63%;
+    max-width: 750px;
+
+    margin: 0 auto 72px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.public-image img {
+    width: 100%;
+    height: 225px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.public-text h2 {
+    font-size: 21px;
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+.public-text p {
+    width: 285px;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-bottom: 22px;
+}
+
+.public-text a {
+    font-size: 8px;
+
+    border-bottom: 1px solid #777;
+
+    padding-bottom: 3px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    width: 63%;
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+}
+
+.features > h2 {
+    font-size: 20px;
+
+    margin-bottom: 22px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 38px;
+}
+
+.feature h3 {
+    font-size: 9px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 8px;
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BUILDING SAFER JOURNEYS
+========================= */
+
+.journeys {
+    width: 63%;
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+}
+
+.journeys > h2 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.journey-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.journey-card img {
+    width: 100%;
+    height: 225px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.journey-card h3 {
+    font-size: 9px;
+
+    font-weight: 500;
+
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.journey-card p {
+    font-size: 8px;
+
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.journey-card a {
+    font-size: 8px;
+
+    border-bottom: 1px solid #777;
+
+    padding-bottom: 3px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 8%;
+    }
+
+    .commitment,
+    .public-safety,
+    .features,
+    .journeys {
+        width: 84%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 48px;
+
+        padding: 0 20px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .nav-left a {
+        display: none;
+    }
+
+    .nav-right a {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    /* COMMITMENT */
+
+    .commitment {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-top: 35px;
+        margin-bottom: 65px;
+    }
+
+    .commitment-text h1 {
+        font-size: 30px;
+    }
+
+    .commitment-text p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .commitment-image img {
+        height: 240px;
+    }
+
+
+    /* PUBLIC SAFETY */
+
+    .public-safety {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 60px;
+    }
+
+    .public-image img {
+        height: 240px;
+    }
+
+    .public-text p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+    /* FEATURES */
+
+    .features {
+        width: 88%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .feature p {
+        font-size: 10px;
+    }
+
+
+    /* JOURNEYS */
+
+    .journeys {
+        width: 88%;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .journey-card img {
+        height: 240px;
+    }
+
+    .journey-card p {
+        font-size: 10px;
+    }
+
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =================================
+   BLUE QUOTE SECTION
+================================= */
+
+.quote-section {
+    width: 100%;
+
+    background: #276df1;
+
+    color: #fff;
+
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+}
+
+.quote-container {
+    width: 60%;
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.quote {
+    max-width: 720px;
+
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+}
+
+.author {
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+main {
+    width: 100%;
+
+    background: #fff;
+}
+
+
+/* =================================
+   PARTNER SECTION
+================================= */
+
+.partner-section {
+    width: 60%;
+    max-width: 750px;
+
+    margin: 45px auto 80px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.partner-image {
+    width: 100%;
+}
+
+.partner-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 225px;
+
+    object-fit: cover;
+}
+
+
+/* TEXT */
+
+.partner-content h1 {
+    font-size: 25px;
+
+    line-height: 1.12;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.partner-content p {
+    width: 285px;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+.partner-content a {
+    font-size: 10px;
+
+    color: #333;
+
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid #777;
+}
+
+
+/* =================================
+   SAFETY CARDS
+================================= */
+
+.safety-cards {
+    width: 60%;
+    max-width: 750px;
+
+    margin: 0 auto 100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 180px;
+}
+
+.safety-card {
+    min-height: 125px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+.safety-card h3 {
+    font-size: 12px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.safety-card p {
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.safety-card a {
+    display: inline-block;
+
+    font-size: 10px;
+
+    color: #333;
+
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid #999;
+}
+
+
+/* =================================
+   DISCLAIMER
+================================= */
+
+.disclaimer {
+    width: 60%;
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    width: 100%;
+
+    background: #000;
+
+    color: #fff;
+
+    min-height: 650px;
+}
+
+.footer-container {
+    width: 60%;
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding-top: 70px;
+}
+
+
+/* =================================
+   FOOTER TOP
+================================= */
+
+.footer-top {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+.footer-logo {
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+.help {
+    font-size: 10px;
+
+    color: #fff;
+}
+
+
+/* =================================
+   FOOTER COLUMNS
+================================= */
+
+.footer-columns {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 60px;
+
+    margin-top: 65px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 11px;
+
+    font-weight: 500;
+
+    margin-bottom: 18px;
+}
+
+.footer-column a {
+    font-size: 8px;
+
+    color: #ddd;
+
+    margin-bottom: 13px;
+}
+
+
+/* =================================
+   SOCIAL / LANGUAGE
+================================= */
+
+.footer-middle {
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+
+    gap: 25px;
+}
+
+.socials a {
+    font-size: 10px;
+
+    color: #fff;
+}
+
+.language {
+    display: flex;
+
+    gap: 25px;
+
+    font-size: 9px;
+
+    color: #eee;
+}
+
+
+/* =================================
+   APP BUTTONS
+================================= */
+
+.apps {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 45px;
+}
+
+.app-button {
+    width: 105px;
+    height: 37px;
+
+    border: 1px solid #777;
+
+    border-radius: 4px;
+
+    padding: 5px 9px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.app-button span {
+    font-size: 5px;
+
+    color: #ddd;
+}
+
+.app-button strong {
+    font-size: 9px;
+
+    font-weight: 500;
+
+    margin-top: 2px;
+}
+
+
+/* =================================
+   FOOTER BOTTOM
+================================= */
+
+.footer-bottom {
+    margin-top: 55px;
+
+    padding-bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    font-size: 8px;
+
+    color: #777;
+}
+
+.legal {
+    display: flex;
+
+    gap: 25px;
+}
+
+.legal a {
+    font-size: 8px;
+
+    color: #777;
+}
+
+
+/* =================================
+   HOVER EFFECTS
+================================= */
+
+a:hover {
+    opacity: 0.75;
+}
+
+.app-button:hover {
+    opacity: 0.85;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .quote-container,
+    .partner-section,
+    .safety-cards,
+    .disclaimer,
+    .footer-container {
+        width: 80%;
+    }
+
+    .partner-section {
+        gap: 40px;
+    }
+
+    .safety-cards {
+        gap: 80px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+    /* BLUE SECTION */
+
+    .quote-section {
+        height: auto;
+
+        padding: 45px 0;
+    }
+
+    .quote-container {
+        width: 88%;
+    }
+
+    .quote {
+        font-size: 12px;
+    }
+
+
+    /* PARTNER */
+
+    .partner-section {
+        width: 88%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        margin-top: 35px;
+
+        margin-bottom: 65px;
+    }
+
+    .partner-image img {
+        height: 240px;
+    }
+
+    .partner-content {
+        width: 100%;
+    }
+
+    .partner-content h1 {
+        font-size: 28px;
+    }
+
+    .partner-content p {
+        width: 100%;
+
+        font-size: 11px;
+    }
+
+
+    /* SAFETY */
+
+    .safety-cards {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        margin-bottom: 65px;
+    }
+
+    .safety-card p {
+        font-size: 10px;
+    }
+
+
+    /* DISCLAIMER */
+
+    .disclaimer {
+        width: 88%;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        min-height: auto;
+    }
+
+    .footer-container {
+        width: 88%;
+
+        padding-top: 50px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+
+        margin-top: 50px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .legal {
+        gap: 18px;
+    }
+
+}

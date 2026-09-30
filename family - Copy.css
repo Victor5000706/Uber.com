@@ -1,0 +1,49 @@
+.container {
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    height: 20px;
+    background:blue;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial,  sans-serif;
+    font-display: block;
+    
+}
+
+.box, .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    gap: 15px;
+    padding: 10px 20px 10px 20px;
+    grid-template-columns: repeat(3 2fr);
+    align-items: flex-start;
+    background-color: green;
+    width: 300px;
+    height: 100px;
+    border-radius: initial;
+   
+
+    
+    
+}
+
+. {
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.side {
+    display: flex;
+    flex: 1;
+    display: inline-flex;
+    
+}

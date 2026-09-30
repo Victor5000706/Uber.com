@@ -1,0 +1,809 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 35px;
+    background: #050505;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 11%;
+    font-size: 8px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.about span {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.nav-right {
+    gap: 17px;
+}
+
+.nav-right button {
+    border: none;
+    background: white;
+    color: #111;
+
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    font-size: 8px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 365px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-title {
+    position: absolute;
+    left: 20.5%;
+    bottom: 37px;
+}
+
+.hero-title h1 {
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    background: white;
+    padding: 35px 0 40px;
+}
+
+.intro-content {
+    width: 65%;
+    max-width: 650px;
+    margin: auto;
+}
+
+.intro h2 {
+    width: 500px;
+    font-size: 21px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    width: 430px;
+
+    font-size: 8px;
+    line-height: 1.45;
+    color: #555;
+}
+
+
+/* =========================
+   CEO SECTION
+========================= */
+
+.ceo-section {
+    height: 315px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.ceo-section img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ceo-content {
+    position: absolute;
+    left: 20.5%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+    width: 270px;
+}
+
+.ceo-content h2 {
+    font-size: 27px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.ceo-content p {
+    font-size: 9px;
+    line-height: 1.4;
+
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+
+.letter-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 18px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.letter-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   INFORMATION SECTIONS
+========================= */
+
+.info-section {
+    width: 65%;
+    max-width: 650px;
+
+    margin: 35px auto 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.info-image img {
+    display: block;
+
+    width: 100%;
+    height: 195px;
+
+    object-fit: cover;
+}
+
+.info-text h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.info-text p {
+    font-size: 8px;
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.info-text a {
+    color: #222;
+    text-decoration: none;
+
+    font-size: 8px;
+
+    border-bottom: 1px solid #777;
+    padding-bottom: 2px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    border-bottom: 1px solid #777;
+}
+
+
+/* =========================
+   RIDES SECTION
+========================= */
+
+.rides {
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-title {
+        left: 8%;
+        bottom: 30px;
+    }
+
+    .intro-content {
+        width: 84%;
+    }
+
+    .intro h2 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .ceo-content {
+        left: 8%;
+    }
+
+    .info-section {
+        width: 84%;
+
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        margin-bottom: 60px;
+    }
+
+    .info-image img {
+        height: 230px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .nav-left a {
+        display: none;
+    }
+
+    .nav-right a:not(:last-of-type) {
+        display: none;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero {
+        height: 280px;
+    }
+
+    .hero-title h1 {
+        font-size: 26px;
+    }
+
+    .ceo-section {
+        height: 400px;
+    }
+
+    .ceo-content {
+        left: 8%;
+        top: 60%;
+    }
+
+    .info-section {
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   SAFETY
+========================= */
+
+.safety {
+    width: 65%;
+    max-width: 770px;
+    margin: 30px auto 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+
+    align-items: center;
+}
+
+.safety-text h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.safety-text p {
+    width: 300px;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.safety-text a {
+    font-size: 9px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 3px;
+}
+
+.safety-image {
+    height: 185px;
+    background: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.safety-image img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   COMPANY INFO
+========================= */
+
+.company {
+    width: 65%;
+    max-width: 770px;
+    margin: 0 auto 70px;
+}
+
+.company > h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.company-card img {
+    width: 100%;
+    height: 185px;
+
+    display: block;
+    object-fit: cover;
+}
+
+.company-card h3 {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.company-card p {
+    font-size: 8px;
+    line-height: 1.45;
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.company-card a {
+    font-size: 8px;
+
+    border-bottom: 1px solid #555;
+    padding-bottom: 3px;
+}
+
+
+/* =========================
+   LATEST
+========================= */
+
+.latest {
+    width: 65%;
+    max-width: 770px;
+
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.latest > h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px;
+}
+
+.latest-item .icon {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.latest-item h3 {
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+.latest-item p {
+    font-size: 8px;
+    line-height: 1.5;
+    color: #555;
+
+    margin-bottom: 17px;
+}
+
+.latest-item a {
+    font-size: 8px;
+
+    border-bottom: 1px solid #555;
+    padding-bottom: 3px;
+}
+
+
+/* =========================
+   CAREERS
+========================= */
+
+.careers {
+    background: #f6f6f6;
+
+    min-height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 20.5%;
+}
+
+.career-content h2 {
+    font-size: 27px;
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.career-content button {
+    background: #000;
+    color: #fff;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 13px;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.globe {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe img {
+    width: 135px;
+    height: 135px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #000;
+    color: white;
+
+    min-height: 430px;
+}
+
+.footer-container {
+    width: 65%;
+    max-width: 770px;
+
+    margin: auto;
+
+    padding-top: 55px;
+}
+
+
+/* Footer top */
+
+.footer-top h2 {
+    font-size: 15px;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.footer-top a {
+    font-size: 8px;
+}
+
+
+/* Footer columns */
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+.footer-links h3 {
+    font-size: 8px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+
+    font-size: 7px;
+    color: #ccc;
+
+    margin-bottom: 12px;
+}
+
+
+/* Social and language */
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 45px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+
+    font-size: 9px;
+}
+
+.language {
+    font-size: 8px;
+    color: #ddd;
+
+    display: flex;
+    gap: 10px;
+}
+
+
+/* App buttons */
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.app-button {
+    background: #111;
+
+    border: 1px solid #555;
+    border-radius: 5px;
+
+    width: 105px;
+    height: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10px;
+}
+
+.app-button small {
+    font-size: 5px;
+    color: #ccc;
+}
+
+.app-button strong {
+    font-size: 9px;
+    color: white;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+
+.footer-bottom p {
+    font-size: 6px;
+    color: #888;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom a {
+    font-size: 7px;
+    color: #888;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .safety,
+    .company,
+    .latest,
+    .footer-container {
+        width: 85%;
+    }
+
+    .careers {
+        padding: 40px 8%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .safety {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .safety-text p {
+        width: 100%;
+    }
+
+    .safety-image {
+        height: 220px;
+    }
+
+    .company-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .company-card img {
+        height: 220px;
+    }
+
+    .latest-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .careers {
+        min-height: 350px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+    .globe {
+        align-self: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

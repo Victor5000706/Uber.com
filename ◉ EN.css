@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #111;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 27px;
+    background: #000;
+    color: #fff;
+}
+
+.nav-container {
+    width: 66%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left side */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.logo {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 6px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Right side */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 6px;
+}
+
+.signup {
+    background: #fff;
+    color: #000 !important;
+
+    padding: 5px 9px;
+    border-radius: 12px;
+    font-size: 6px !important;
+}
+
+/* =========================
+   LANGUAGE PAGE
+========================= */
+
+.language-page {
+    min-height: calc(100vh - 27px);
+    background: #f7f7f7;
+}
+
+.language-container {
+    width: 58%;
+    margin: auto;
+    padding-top: 49px;
+    position: relative;
+}
+
+.language-container h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 37px;
+}
+
+/* Close Button */
+
+.close-btn {
+    position: absolute;
+    top: 27px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.6;
+}
+
+/* Language Option */
+
+.language-option a {
+    color: #222;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.language-option a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .language-container {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 50px;
+    }
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .nav-right a {
+        font-size: 9px;
+    }
+
+    .language-page {
+        min-height: calc(100vh - 50px);
+    }
+
+    .language-container {
+        width: 88%;
+        padding-top: 50px;
+    }
+
+    .language-container h1 {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+    .language-option a {
+        font-size: 13px;
+    }
+
+    .close-btn {
+        right: 0;
+        top: 15px;
+        font-size: 25px;
+    }
+
+}

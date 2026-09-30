@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber - Get a Ride</title>
+    <link rel="stylesheet" href="Rent.css">
+    <a href="uber.html"></a>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <!-- Uber Logo -->
+        <a href="index.html" class="logo">Uber</a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+            <a href="ride.html" class="nav-item active">
+                <span>🚕</span>
+                Ride
+            </a>
+
+            <a href="rent.html" class="nav-item">
+                <span>▣</span>
+                Rent
+            </a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="nav-right">
+            <a href="Login.html" class="login">♙ Login</a>
+            <a href="Signup.html" class="signup">Sign up</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+
+        <!-- LEFT RIDE PANEL -->
+        <aside class="ride-panel">
+
+            <h2>Get a ride</h2>
+
+            <!-- Pickup -->
+            <div class="input-box">
+                <span class="icon">●</span>
+                <input
+                    type="text"
+                    placeholder="Pickup location"
+                >
+            </div>
+
+            <!-- Dropoff -->
+            <div class="input-box">
+                <span class="icon">●</span>
+                <input
+                    type="text"
+                    placeholder="Dropoff location"
+                >
+            </div>
+
+            <!-- Pickup row -->
+            <div class="select-box">
+                <span>◷</span>
+                <span><a href="Pickup now.html">Pickup now</a></span>
+                <span class="arrow">⌄</span>
+            </div>
+
+            <!-- For me -->
+            <div class="for-me">
+                <span>♟</span>
+                <span>For me</span>
+                <span>⌄</span>
+            </div>
+
+            <!-- Search -->
+            <button class="search-button">
+                Search
+            </button>
+
+        </aside>
+
+
+        <!-- MAP -->
+        <section class="map-container">
+
+            <iframe
+                class="map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5%2C2%2C17%2C37&layer=mapnik"
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+

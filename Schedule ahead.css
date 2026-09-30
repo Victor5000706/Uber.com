@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Top black bar */
+.top-bar {
+    width: 100%;
+    height: 25px;
+    background: #000000;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 24px;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* Main page */
+.login-container {
+    min-height: calc(100vh - 25px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form */
+.login-box {
+    width: 300px;
+    max-width: 90%;
+}
+
+/* Heading */
+.login-box h2 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+/* Input */
+.input-field {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #f2f2f2;
+
+    padding: 0 10px;
+
+    font-size: 9px;
+    outline: none;
+
+    margin-bottom: 7px;
+}
+
+.input-field::placeholder {
+    color: #777777;
+}
+
+/* Continue button */
+.continue-btn {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #000000;
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background: #222222;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+
+    color: #777777;
+
+    font-size: 8px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+
+    height: 1px;
+    background: #dddddd;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+/* Google and Apple buttons */
+.social-btn {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #eeeeee;
+    color: #000000;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    margin-bottom: 6px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn:hover {
+    background: #e2e2e2;
+}
+
+/* Google icon */
+.google-icon {
+    position: absolute;
+    left: 50px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    color: #4285f4;
+}
+
+/* Apple icon */
+.apple-icon {
+    position: absolute;
+    left: 51px;
+
+    font-size: 9px;
+    color: #000000;
+}
+
+/* Lower divider */
+.bottom-divider {
+    width: 100%;
+    height: 1px;
+
+    background: #dddddd;
+
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/* Terms */
+.terms {
+    color: #777777;
+
+    font-size: 7px;
+    line-height: 10px;
+
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+
+    .top-bar {
+        padding-left: 20px;
+    }
+
+    .login-box {
+        width: 300px;
+    }
+}

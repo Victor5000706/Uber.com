@@ -1,0 +1,898 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+    width: 100%;
+    height: 29px;
+    background: #000;
+    color: #fff;
+}
+
+.nav-container {
+    width: 520px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    gap: 15px;
+}
+
+.nav-right {
+    gap: 12px;
+}
+
+.logo {
+    font-size: 9px;
+    margin-right: 8px;
+}
+
+.navbar a,
+.navbar span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 5px;
+}
+
+.nav-right button {
+    border: 0;
+    background: #fff;
+
+    color: #111;
+
+    font-size: 5px;
+
+    padding: 4px 8px;
+
+    border-radius: 15px;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.container {
+    width: 470px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 7px;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   BREADCRUMB
+============================== */
+
+.breadcrumb {
+    padding-top: 14px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    font-size: 6px;
+    color: #555;
+}
+
+.breadcrumb a {
+    color: #555;
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 62px;
+}
+
+.hero-text {
+    width: 48%;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+}
+
+.hero-text > p {
+    width: 180px;
+
+    color: #555;
+
+    margin-bottom: 12px;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 134px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+
+/* ==============================
+   LOCATION FORM
+============================== */
+
+.location-form {
+    width: 162px;
+}
+
+.location-input {
+    height: 25px;
+
+    background: #f4f4f4;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7px;
+
+    margin-bottom: 2px;
+}
+
+.location-input span {
+    font-size: 7px;
+    margin-right: 5px;
+}
+
+.location-input input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 6px;
+}
+
+.location-input b {
+    font-size: 7px;
+}
+
+
+/* ==============================
+   HERO BUTTONS
+============================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 8px;
+}
+
+.black-btn,
+.gray-btn {
+    border: none;
+
+    height: 20px;
+
+    padding: 0 10px;
+
+    border-radius: 3px;
+
+    font-size: 6px;
+
+    cursor: pointer;
+}
+
+.black-btn {
+    background: #000;
+    color: #fff;
+}
+
+.gray-btn {
+    background: #eee;
+    color: #111;
+}
+
+
+/* ==============================
+   RESERVE SECTION
+============================== */
+
+.reserve-section h2 {
+    margin-bottom: 8px;
+}
+
+.section-description {
+    color: #555;
+
+    margin-bottom: 9px;
+}
+
+.reserve-links {
+    display: flex;
+    gap: 6px;
+
+    font-size: 6px;
+
+    margin-bottom: 12px;
+}
+
+.reserve-links a {
+    color: #555;
+}
+
+
+/* ==============================
+   FEATURE CARDS
+============================== */
+
+.feature-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 140px;
+
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    font-size: 7px;
+
+    line-height: 1.25;
+
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    font-size: 6px;
+
+    color: #555;
+
+    line-height: 1.45;
+}
+
+
+/* ==============================
+   FAQ
+============================== */
+
+.faq-section {
+    margin-top: 58px;
+}
+
+.faq-section h2 {
+    margin-bottom: 12px;
+}
+
+.faq-list {
+    width: 100%;
+}
+
+.faq-item {
+    height: 24px;
+
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6px;
+
+    font-size: 6px;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid #eee;
+}
+
+.faq-item b {
+    font-size: 7px;
+    font-weight: normal;
+}
+
+
+/* ==============================
+   AIRPORT SEARCH
+============================== */
+
+.airport-section {
+    margin-top: 50px;
+}
+
+.airport-section h2 {
+    margin-bottom: 9px;
+}
+
+.search {
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+.search input {
+    flex: 1;
+
+    height: 20px;
+
+    border: none;
+
+    outline: none;
+
+    background: #f4f4f4;
+
+    padding: 0 7px;
+
+    font-size: 6px;
+}
+
+.search button {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 7px;
+
+    border: none;
+    border-radius: 3px;
+
+    background: #000;
+    color: #fff;
+
+    font-size: 9px;
+}
+
+
+/* ==============================
+   REGIONS
+============================== */
+
+.regions {
+    height: 34px;
+
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 6px;
+}
+
+.regions a {
+    color: #111;
+}
+
+.regions .active {
+    font-weight: bold;
+}
+
+
+/* ==============================
+   AIRPORT LIST
+============================== */
+
+.airport-list {
+    padding-top: 18px;
+}
+
+.airport-list h3 {
+    font-size: 9px;
+
+    margin-bottom: 12px;
+}
+
+.airport-columns {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 35px;
+}
+
+.airport-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    font-size: 7px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    margin-bottom: 6px;
+}
+
+.airport-column a {
+    font-size: 5.5px;
+
+    line-height: 1.65;
+
+    color: #555;
+
+    text-decoration: none;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    width: 100%;
+    height: 20px;
+
+    background: #f5f5f5;
+
+    margin-top: 50px;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 550px) {
+
+    .nav-left a:nth-of-type(3),
+    .nav-right span,
+    .nav-right a:first-of-type {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 220px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card img {
+        height: 220px;
+    }
+
+    .airport-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .airport-column:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .regions {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* =========================================
+   NOTES
+========================================= */
+
+.airport-notes {
+    margin-top: 45px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+
+.airport-notes p {
+    font-size: 7px;
+    line-height: 1.7;
+
+    color: #555;
+
+    margin: 6px 0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.uber-footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+
+    padding: 55px 0 30px;
+}
+
+
+.footer-container {
+    width: 100%;
+    max-width: 960px;
+
+    margin: 0 auto;
+    padding: 0 24px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FOOTER TOP
+========================================= */
+
+.footer-top {
+    margin-bottom: 65px;
+}
+
+
+.footer-top h2 {
+    font-size: 22px;
+    font-weight: 500;
+
+    margin: 0 0 20px;
+}
+
+
+.help-link {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 10px;
+}
+
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    column-gap: 45px;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-column h3 {
+    font-size: 11px;
+    font-weight: 600;
+
+    margin: 0 0 14px;
+
+    color: #fff;
+}
+
+
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+
+    font-size: 8px;
+    line-height: 2.15;
+}
+
+
+.footer-column a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.social-icons span {
+    color: #fff;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LANGUAGE
+========================================= */
+
+.language-links {
+    display: flex;
+    gap: 25px;
+
+    font-size: 8px;
+    color: #fff;
+}
+
+
+/* =========================================
+   APP BUTTONS
+========================================= */
+
+.app-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+
+.app-buttons button {
+    width: 105px;
+    height: 32px;
+
+    background: #fff;
+    color: #000;
+
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+.app-buttons small {
+    font-size: 5px;
+    line-height: 1;
+}
+
+
+.app-buttons strong {
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   LEGAL
+========================================= */
+
+.footer-legal {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 45px;
+
+    color: #aaa;
+
+    font-size: 7px;
+}
+
+
+.footer-legal div {
+    display: flex;
+    gap: 25px;
+}
+
+
+.footer-legal a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+
+.footer-legal a:hover {
+    color: #fff;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 750px) {
+
+    .airport-columns {
+        column-gap: 35px;
+    }
+
+    .airport-country a {
+        font-size: 8px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .asia-airports {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    .airport-columns {
+        grid-template-columns: 1fr;
+
+        row-gap: 25px;
+    }
+
+
+    .no-heading {
+        padding-top: 0;
+    }
+
+
+    .airport-country h3 {
+        font-size: 13px;
+    }
+
+
+    .airport-country a {
+        font-size: 9px;
+        line-height: 1.8;
+    }
+
+
+    .footer-container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 25px;
+        row-gap: 40px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+
+    .footer-legal {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+}

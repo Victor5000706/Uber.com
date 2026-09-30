@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+/* Black About section */
+.about-menu {
+    width: 100%;
+    background: #000;
+}
+
+/* About button */
+summary {
+    height: 230px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    color: white;
+    font-size: 58px;
+    font-weight: 400;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Remove default triangle */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Arrow */
+.arrow {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1;
+
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+}
+
+/* Rotate arrow when opened */
+details[open] .arrow {
+    transform: rotate(180deg);
+}
+
+/* White dropdown area */
+.menu-content {
+    background: white;
+    padding: 45px 65px 60px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu links */
+.menu-content a {
+    color: #777;
+    text-decoration: none;
+
+    font-size: 52px;
+    font-weight: 400;
+
+    margin-bottom: 70px;
+}
+
+/* Last link */
+.menu-content a:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional hover */
+.menu-content a:hover {
+    color: #000;
+}

@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.top-nav {
+    height: 34px;
+    background: #000;
+    color: #fff;
+}
+
+.nav-container {
+    width: 690px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.uber-logo {
+    font-size: 15px;
+    margin-right: 22px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 18px;
+}
+
+.main-nav a,
+.right-nav a {
+    font-size: 7px;
+}
+
+.right-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.signup-small {
+    background: #fff;
+    color: #000;
+    padding: 6px 11px;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   PAGE WIDTH
+========================= */
+
+.page-container {
+    width: 620px;
+    margin: auto;
+}
+
+
+/* =========================
+   SECOND NAVIGATION
+========================= */
+
+.sub-nav {
+    height: 35px;
+}
+
+.sub-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-inner h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sub-links {
+    display: flex;
+    gap: 13px;
+}
+
+.sub-links a {
+    font-size: 6px;
+    color: #777;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 465px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 280px;
+    padding-top: 115px;
+}
+
+.hero-text h1 {
+    font-size: 29px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 22px;
+}
+
+.hero-text p {
+    width: 270px;
+    font-size: 8px;
+    line-height: 13px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.black-button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 375px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   MORE SECTION
+========================= */
+
+.more {
+    padding-top: 25px;
+    padding-bottom: 55px;
+}
+
+.small-title {
+    color: #777;
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+
+.more h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.cards {
+    display: flex;
+    gap: 18px;
+}
+
+.card {
+    width: 300px;
+    min-height: 83px;
+
+    border: 1px solid #ddd;
+
+    padding: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    width: 245px;
+    font-size: 7px;
+    line-height: 11px;
+    color: #555;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta {
+    padding: 5px 0 42px;
+}
+
+.final-cta h2 {
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+
+.final-cta a {
+    font-size: 7px;
+    text-decoration: underline;
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #000;
+    color: #fff;
+}
+
+.footer-container {
+    width: 620px;
+    margin: auto;
+}
+
+.footer-notice {
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #333;
+
+    font-size: 7px;
+    line-height: 11px;
+    color: #ddd;
+}
+
+.footer-main {
+    padding-top: 55px;
+}
+
+.footer-brand h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.footer-brand a {
+    font-size: 8px;
+}
+
+
+/* Footer columns */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+
+    margin-top: 55px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-column h4 {
+    font-size: 9px;
+    margin-bottom: 2px;
+}
+
+.footer-column a {
+    font-size: 7px;
+    color: #ddd;
+}
+
+
+/* Bottom row */
+
+.footer-bottom {
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons span {
+    font-size: 9px;
+}
+
+.location {
+    font-size: 8px;
+}
+
+
+/* App buttons */
+
+.app-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 35px;
+}
+
+.google-play,
+.app-store {
+    border: 1px solid #555;
+    border-radius: 4px;
+
+    padding: 7px 10px;
+
+    font-size: 7px;
+}
+
+
+/* Copyright */
+
+.copyright {
+    margin-top: 38px;
+    padding-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 7px;
+    color: #888;
+}
+
+.copyright div {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav-container,
+    .page-container,
+    .footer-container {
+        width: 90%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .right-nav {
+        gap: 10px;
+    }
+
+    .sub-links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        min-height: auto;
+        padding-top: 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 45px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        width: 90%;
+        font-size: 9px;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uber - Get a ride</title>
+
+    <link rel="stylesheet" href="Create an account.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            Uber
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+
+            <a href="Ride.html" class="active">
+                <span>●</span>
+                Ride
+            </a>
+
+            <a href="#">
+                <span>◉</span>
+                Rent
+            </a>
+
+        </nav>
+
+
+        <!-- Right side -->
+        <div class="nav-right">
+
+            <a href="Log in.html">♟ &nbsp; Login</a>
+
+            <a href="Sign up.html" class="signup">
+                Sign up
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="page">
+
+        <!-- ================= RIDE PANEL ================= -->
+
+        <aside class="ride-panel">
+
+            <div class="ride-card">
+
+                <h2>Get a ride</h2>
+
+
+                <!-- Pickup -->
+                <div class="input-row">
+
+                    <span class="input-icon">●</span>
+
+                    <input
+                        type="text"
+                        placeholder="Pickup location"
+                    >
+
+                </div>
+
+
+                <!-- Dropoff -->
+                <div class="input-row">
+
+                    <span class="input-icon">▣</span>
+
+                    <input
+                        type="text"
+                        placeholder="Dropoff location"
+                    >
+
+                </div>
+
+
+                <!-- Pickup time -->
+                <div class="select-row">
+
+                    <span class="input-icon">◷</span>
+
+                    <span>Pickup now</span>
+
+                    <span class="down-arrow">⌄</span>
+
+                </div>
+
+
+                <!-- For me -->
+                <div class="small-select">
+
+                    <span>♟</span>
+
+                    <span>For me</span>
+
+                    <span>⌄</span>
+
+                </div>
+
+
+                <!-- Search -->
+                <button class="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ================= MAP ================= -->
+
+        <section class="map">
+
+            <!--
+                Put your map image inside the images folder.
+
+                Example:
+                images/lagos-map.jpg
+            -->
+
+            <img 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5%2C2%2C17%2C37&layer=mapnik" alt="Map of Lagos">
+                class="map-image"
+            >
+
+
+            <!-- Map controls -->
+            <div class="map-controls">
+
+                <button>⌖</button>
+
+                <div class="zoom-controls">
+
+                    <button>+</button>
+
+                    <button>−</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

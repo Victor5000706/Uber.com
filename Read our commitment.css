@@ -1,0 +1,715 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 24px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+
+    position: relative;
+    z-index: 10;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 8px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-nav a,
+.right-nav a,
+.right-nav span {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 5px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup {
+    background: #ffffff;
+    color: #000000 !important;
+
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   ARTICLE PAGE
+========================= */
+
+.article-page {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.date {
+    text-align: center;
+
+    margin-top: 27px;
+
+    font-size: 8px;
+    color: #222222;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.article-title {
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+/* =========================
+   AUTHOR
+========================= */
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 12px;
+
+    font-size: 7px;
+    color: #333333;
+}
+
+.author-icon {
+    width: 13px;
+    height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-image {
+    width: 460px;
+    height: 230px;
+
+    margin: 28px auto 0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Text over hero */
+
+.hero-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-22deg);
+
+    color: #ffffff;
+
+    font-size: 31px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    text-align: center;
+
+    width: 300px;
+}
+
+
+/* =========================
+   SHARE
+========================= */
+
+.share {
+    width: 460px;
+
+    margin: 23px auto 0;
+
+    text-align: center;
+}
+
+.share p {
+    font-size: 7px;
+    color: #777777;
+
+    margin-bottom: 7px;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.share-buttons button {
+    width: 13px;
+    height: 13px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    font-size: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    width: 310px;
+
+    margin: 35px auto 0;
+
+    font-size: 7px;
+    line-height: 1.48;
+
+    color: #333333;
+}
+
+.content > p {
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+.content-section {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 13px;
+
+    min-height: 70px;
+}
+
+.text-column {
+    width: 235px;
+}
+
+.content-section h2 {
+    font-size: 8px;
+    line-height: 1.25;
+
+    margin-bottom: 7px;
+
+    font-weight: 700;
+}
+
+.content-section p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   PHONE IMAGES
+========================= */
+
+.phone {
+    position: absolute;
+
+    right: -5px;
+    top: 0;
+
+    width: 54px;
+    height: 115px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.content-section ul {
+    margin-top: 7px;
+    padding-left: 15px;
+}
+
+.content-section li {
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.content a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .main-nav {
+        gap: 7px;
+    }
+
+    .right-nav {
+        gap: 6px;
+    }
+
+    .hero-image,
+    .share {
+        width: 80%;
+    }
+
+    .hero-image {
+        height: auto;
+        aspect-ratio: 2 / 1;
+    }
+
+    .article-title {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        height: 35px;
+    }
+
+    .nav-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 8px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .right-nav {
+        gap: 7px;
+    }
+
+    .article-page {
+        padding: 0 15px 50px;
+    }
+
+    .date {
+        margin-top: 30px;
+    }
+
+    .article-title {
+        font-size: 26px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 190px;
+
+        margin-top: 25px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .share {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 350px;
+
+        font-size: 11px;
+        line-height: 1.55;
+    }
+
+    .text-column {
+        width: calc(100% - 75px);
+    }
+
+    .content-section h2 {
+        font-size: 12px;
+    }
+
+    .phone {
+        width: 58px;
+        height: 120px;
+    }
+}
+
+/* =====================================
+   BOTTOM CONTENT
+   ALIGNS WITH THE FIRST IMAGE
+===================================== */
+
+.bottom-content {
+    width: 860px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+
+/* =====================================
+   CATEGORY
+===================================== */
+
+.category-section {
+    margin-bottom: 95px;
+}
+
+.category-section h2 {
+    font-size: 20px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.category-tag {
+    display: inline-block;
+
+    background: #edf5ff;
+    color: #4b80b5;
+
+    font-size: 10px;
+    line-height: 1;
+
+    padding: 5px 7px;
+
+    border-radius: 3px;
+}
+
+
+/* =====================================
+   RELATED TITLE
+===================================== */
+
+.related-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.related-heading h2 {
+    font-size: 25px;
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+.related-heading span {
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   RELATED ARTICLE GRID
+===================================== */
+
+.related-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.related-card {
+    position: relative;
+
+    display: block;
+
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+/* =====================================
+   CARD IMAGE
+===================================== */
+
+.related-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* =====================================
+   DARK GRADIENT
+===================================== */
+
+.card-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.02) 15%,
+        rgba(0, 0, 0, 0.10) 35%,
+        rgba(0, 0, 0, 0.80) 100%
+    );
+}
+
+
+/* =====================================
+   CARD CONTENT
+===================================== */
+
+.card-info {
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+}
+
+
+/* =====================================
+   SUSTAINABILITY TAG
+===================================== */
+
+.card-tag {
+    display: inline-block;
+
+    background: white;
+    color: #4d80b3;
+
+    font-size: 9px;
+
+    padding: 4px 6px;
+
+    border-radius: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   CARD TITLE
+===================================== */
+
+.card-info h3 {
+    font-size: 18px;
+
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   DATE
+===================================== */
+
+.card-info p {
+    font-size: 10px;
+
+    line-height: 1;
+
+    color: white;
+}
+
+
+/* =====================================
+   HOVER
+===================================== */
+
+.related-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .bottom-content {
+        width: 90%;
+    }
+
+    .related-grid {
+        gap: 15px;
+    }
+
+    .related-card {
+        height: 170px;
+    }
+
+    .card-info h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 650px) {
+
+    .bottom-content {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 50px 20px;
+    }
+
+    .category-section {
+        margin-bottom: 60px;
+    }
+
+    .related-heading h2 {
+        font-size: 22px;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-card {
+        height: 210px;
+    }
+
+    .card-info h3 {
+        font-size: 19px;
+    }
+}

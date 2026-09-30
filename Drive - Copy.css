@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.top-nav {
+    height: 36px;
+    background: #050505;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 55px;
+    gap: 35px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-links {
+    display: flex;
+    gap: 25px;
+    font-size: 9px;
+}
+
+.right-links {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    font-size: 9px;
+}
+
+.right-links button {
+    border: none;
+    background: #fff;
+    color: #111;
+
+    border-radius: 20px;
+    padding: 6px 12px;
+
+    font-size: 9px;
+}
+
+.sub-nav {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 55px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav strong {
+    font-size: 16px;
+}
+
+.sub-nav nav {
+    margin-left: auto;
+
+    display: flex;
+    gap: 20px;
+
+    color: #777;
+    font-size: 8px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: #000;
+    color: #fff;
+    min-height: 315px;
+}
+
+.hero-content {
+    max-width: 1080px;
+    min-height: 315px;
+
+    margin: auto;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 48%;
+}
+
+.hero-text h1 {
+    font-size: 31px;
+    line-height: 1.08;
+    margin-bottom: 17px;
+}
+
+.hero-text p {
+    width: 370px;
+
+    color: #ddd;
+    font-size: 11px;
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+
+    padding: 10px 16px;
+    border-radius: 3px;
+
+    font-size: 10px;
+}
+
+.login {
+    font-size: 10px;
+}
+
+.hero-image {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 360px;
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   MONEY SECTION
+========================= */
+
+.money-section {
+    background: #fff;
+    padding: 40px 0 38px;
+}
+
+.money-section h2,
+.get-started h2,
+.extras h2,
+.download h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.people-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.people-image img {
+    width: 470px;
+    max-width: 100%;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
+}
+
+.feature h3,
+.start-item h3,
+.extra-item h3 {
+    font-size: 11px;
+    margin: 8px 0;
+}
+
+.feature p,
+.start-item p,
+.extra-item p {
+    color: #666;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 15px;
+}
+
+
+/* =========================
+   GET STARTED
+========================= */
+
+.get-started {
+    background: #f6f6f6;
+    padding: 34px 0 42px;
+}
+
+.tabs {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+    height: 25px;
+}
+
+.tabs span {
+    display: inline-block;
+
+    border-bottom: 2px solid #222;
+    padding-bottom: 9px;
+
+    font-size: 8px;
+}
+
+.start-icon {
+    font-size: 15px;
+}
+
+.start-item a,
+.extra-item a,
+.driver-app a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-size: 8px;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   DRIVER EXTRAS
+========================= */
+
+.extras {
+    background: #fff;
+    padding: 32px 0 38px;
+}
+
+.subtitle {
+    font-size: 9px;
+    color: #777;
+    margin-top: -12px;
+    margin-bottom: 28px;
+}
+
+.extra-icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   DRIVER APP
+========================= */
+
+.driver-app {
+    background: #777;
+    color: #fff;
+    overflow: hidden;
+}
+
+.app-content {
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.app-content > div:first-child {
+    width: 55%;
+    z-index: 2;
+}
+
+.driver-app h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.driver-app p {
+    font-size: 9px;
+    line-height: 1.5;
+    color: #eee;
+    max-width: 410px;
+}
+
+.phone {
+    position: absolute;
+    right: -50px;
+    bottom: -70px;
+    width: 430px;
+    transform: rotate(-12deg);
+}
+
+.phone img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   DOWNLOAD
+========================= */
+
+.download {
+    background: #f5f5f5;
+    padding: 32px 0 50px;
+}
+
+.download-card {
+    background: #fff;
+
+    width: 330px;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.qr {
+    width: 75px;
+    height: 75px;
+}
+
+.qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.download-text {
+    margin-left: 15px;
+}
+
+.download-text h3 {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.download-text p {
+    font-size: 8px;
+    color: #777;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .top-nav {
+        padding: 0 20px;
+    }
+
+    .main-links,
+    .right-links a {
+        display: none;
+    }
+
+    .sub-nav {
+        padding: 0 20px;
+    }
+
+    .sub-nav nav {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .three-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .money-section,
+    .get-started,
+    .extras,
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .app-content > div:first-child {
+        width: 100%;
+    }
+
+    .phone {
+        opacity: .35;
+        right: -130px;
+    }
+
+    .download-card {
+        width: 100%;
+    }
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   SIGN UP SECTION
+========================= */
+
+.signup-section {
+    width: 100%;
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.signup-link {
+    width: 430px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 28px;
+}
+
+.signup-link h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.signup-link span {
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.terms {
+    max-width: 920px;
+    margin: 95px auto 0;
+}
+
+.terms p {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #000;
+    color: #fff;
+    min-height: 600px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 80px 0 25px;
+}
+
+
+/* Brand */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.uber-logo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-brand a {
+    font-size: 12px;
+}
+
+
+/* Footer Columns */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1.2fr 1fr;
+    column-gap: 70px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    color: #ddd;
+    font-size: 9px;
+    margin-bottom: 17px;
+}
+
+
+/* Social + Location */
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icons a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 10px;
+}
+
+
+/* App Stores */
+
+.app-stores {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.store {
+    width: 105px;
+    height: 34px;
+
+    border: 1px solid #555;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 4px 7px;
+}
+
+.store-icon,
+.apple {
+    font-size: 17px;
+}
+
+.store span:last-child {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.store small {
+    font-size: 6px;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #777;
+    font-size: 9px;
+}
+
+.legal-links {
+    display: flex;
+    gap: 28px;
+}
+
+.legal-links a {
+    color: #777;
+}
+
+.bottom-line {
+    width: 48%;
+    height: 15px;
+
+    background: #777;
+    border-radius: 20px;
+
+    margin: 25px auto 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .signup-link {
+        width: 60%;
+    }
+
+    .terms {
+        width: 80%;
+    }
+
+    .footer-container {
+        width: 80%;
+    }
+
+    .footer-columns {
+        column-gap: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .signup-section {
+        padding: 25px 20px 40px;
+    }
+
+    .signup-link {
+        width: 100%;
+    }
+
+    .signup-link h1 {
+        font-size: 22px;
+    }
+
+    .signup-link span {
+        font-size: 30px;
+    }
+
+    .terms {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .terms p {
+        font-size: 9px;
+    }
+
+    .footer-container {
+        width: 85%;
+        padding-top: 55px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .bottom-line {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+
+.navbar {
+    width: 100%;
+    height: 30px;
+
+    background: #050505;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20%;
+
+    font-size: 7px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    gap: 15px;
+}
+
+.nav-right {
+    gap: 14px;
+}
+
+.uber-logo {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar button {
+    border: none;
+    background: #fff;
+    color: #000;
+
+    border-radius: 20px;
+
+    padding: 4px 9px;
+
+    font-size: 7px;
+}
+
+
+/* =====================================
+   MAIN PAGE
+===================================== */
+
+.cities-page {
+    background: #fff;
+    width: 100%;
+}
+
+
+/* =====================================
+   CITIES SECTION
+===================================== */
+
+.cities-section {
+    width: 100%;
+    max-width: 860px;
+
+    margin: 0 auto;
+
+    padding: 28px 20px 35px;
+}
+
+.cities-section h1 {
+    font-size: 25px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.intro {
+    max-width: 480px;
+
+    color: #555;
+
+    font-size: 8px;
+
+    line-height: 1.55;
+
+    margin-bottom: 14px;
+}
+
+.see-prices {
+    color: #111;
+
+    text-decoration: underline;
+
+    font-size: 8px;
+}
+
+
+/* =====================================
+   COUNTRIES
+===================================== */
+
+.countries {
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    margin-top: 65px;
+
+    padding-bottom: 0;
+}
+
+.global-title {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.country-columns {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+}
+
+.country-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.country-column a {
+    color: #111;
+
+    font-size: 7px;
+
+    line-height: 1.7;
+
+    text-decoration: underline;
+
+    width: max-content;
+}
+
+.country-column a:hover {
+    color: #666;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+    width: 100%;
+
+    background: #000;
+
+    color: #fff;
+
+    padding: 45px 20px 35px;
+}
+
+.footer-container {
+    max-width: 860px;
+
+    margin: auto;
+}
+
+.footer-container h2 {
+    font-size: 12px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.help-center {
+    display: inline-block;
+
+    color: #fff;
+
+    font-size: 7px;
+
+    margin-bottom: 50px;
+}
+
+
+/* =====================================
+   FOOTER COLUMNS
+===================================== */
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 50px;
+}
+
+.footer-column h3 {
+    font-size: 8px;
+
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 6px;
+
+    margin-bottom: 10px;
+
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+
+/* =====================================
+   FOOTER MIDDLE
+===================================== */
+
+.footer-middle {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+.social-icons {
+    display: flex;
+
+    gap: 17px;
+
+    color: #ccc;
+
+    font-size: 8px;
+}
+
+.language {
+    display: flex;
+
+    gap: 18px;
+
+    color: #aaa;
+
+    font-size: 7px;
+}
+
+
+/* =====================================
+   DOWNLOAD BUTTONS
+===================================== */
+
+.download-buttons {
+    display: flex;
+
+    gap: 6px;
+
+    margin-top: 28px;
+}
+
+.download {
+    width: 80px;
+    height: 27px;
+
+    border: 1px solid #555;
+
+    border-radius: 4px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 3px 7px;
+
+    text-decoration: none;
+}
+
+.download small {
+    font-size: 4px;
+}
+
+.download strong {
+    font-size: 7px;
+}
+
+
+/* =====================================
+   FOOTER BOTTOM
+===================================== */
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 35px;
+
+    color: #777;
+
+    font-size: 6px;
+}
+
+.legal {
+    display: flex;
+
+    gap: 20px;
+}
+
+.legal a {
+    color: #777;
+
+    text-decoration: none;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 8%;
+    }
+
+    .cities-section,
+    .footer-container {
+        max-width: 700px;
+    }
+
+    .countries {
+        grid-template-columns: 100px 1fr;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 30px;
+
+        padding: 0 12px;
+
+        font-size: 6px;
+    }
+
+    .nav-left {
+        gap: 8px;
+    }
+
+    .nav-right {
+        gap: 7px;
+    }
+
+    .nav-left a:nth-of-type(3),
+    .nav-left a:nth-of-type(4) {
+        display: none;
+    }
+
+    .cities-section {
+        max-width: 430px;
+
+        padding: 28px 25px 30px;
+    }
+
+    .cities-section h1 {
+        font-size: 25px;
+    }
+
+    .intro {
+        font-size: 7px;
+        max-width: 330px;
+    }
+
+    .see-prices {
+        font-size: 7px;
+    }
+
+
+    /* Countries */
+
+    .countries {
+        grid-template-columns: 90px 1fr;
+
+        margin-top: 48px;
+    }
+
+    .global-title {
+        font-size: 8px;
+    }
+
+    .country-columns {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
+    }
+
+    .country-column a {
+        font-size: 6px;
+
+        line-height: 1.8;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 40px 25px 30px;
+    }
+
+    .footer-container {
+        max-width: 430px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 15px;
+    }
+
+    .footer-column h3 {
+        font-size: 7px;
+    }
+
+    .footer-column a {
+        font-size: 5.5px;
+
+        margin-bottom: 9px;
+    }
+
+    .footer-middle {
+        margin-top: 30px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .language {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+
+        font-size: 5px;
+    }
+
+    .legal {
+        gap: 12px;
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+
+    <!-- Main page -->
+    <header class="navbar">
+        <!-- Clickable menu icon -->
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+
+        <div class="logo">Uber Eats</div>
+    </header>
+
+    <main class="hero">
+        <img src="food-image.jpg" alt="Food">
+
+        <h1>Order delivery near you</h1>
+
+        <div class="delivery-box">
+            <div class="address">
+                📍
+                <span>Enter delivery address</span>
+            </div>
+
+            <div class="deliver-now">
+                🕘
+                <span>Deliver now</span>
+                <span>⌄</span>
+            </div>
+        </div>
+
+        <p class="signin">Or <u>Sign In</u></p>
+    </main>
+
+
+    <!-- Dark background -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Side menu - second image -->
+    <aside class="side-menu" id="sideMenu">
+
+        <button class="close-btn" onclick="closeMenu()">×</button>
+
+        <button class="signup">Sign up</button>
+
+        <a href="#">Log in</a>
+
+        <a href="#">Create a business account</a>
+
+        <a href="#">Add your restaurant</a>
+
+        <a href="#">Sign up to deliver</a>
+
+        <a href="#">Get a ride ↗️</a>
+
+        <div class="app-section">
+            <div class="app-logo">
+                <b>Uber</b>
+                <strong>Eats</strong>
+            </div>
+
+            <p>There's more to love in<br>the app.</p>
+
+            <div class="stores">
+                <span>● iPhone</span>
+                <span>♟ Android</span>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
